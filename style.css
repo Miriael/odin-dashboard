@@ -3,6 +3,14 @@
   margin: 0px;
 }
 
+li {
+  list-style-type: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 body {
   display: grid;
   grid-template-columns: 200px auto;
@@ -10,13 +18,34 @@ body {
 }
 
 .sidebar {
-  background: cyan;
+  background: #0ea5e9;
   grid-row: 1 / 3;
+  padding-left: 15px;
+  padding-top: 15px;
+  color: white;
+  font-weight: bolder;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+
+.logo {
+  font-size: larger;
+}
+
 
 .sidebar .main {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.sidebar img {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+.logo {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 30% 70%;
 }
 
 .nav {
