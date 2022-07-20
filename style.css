@@ -27,12 +27,12 @@ body {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-.logo {
+.sidebar__logo {
   font-size: larger;
 }
 
 
-.sidebar .main {
+.sidebar .sidebar__main {
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -42,7 +42,7 @@ body {
   -webkit-filter: invert(100%);
 }
 
-.logo {
+.sidebar__logo {
   display: grid;
   align-items: center;
   grid-template-columns: 30% 70%;
@@ -53,43 +53,45 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
+  padding: 10px 5% 10px;
+  box-shadow: 0px 10px black;
 }
 
-.nav .top,
-.nav .bottom,
-.nav .bottom div {
+.nav .nav__top,
+.nav .nav__bottom,
+.nav .nav__bottom div {
   display: flex;
   align-items: center;
 }
 
-.nav .top div {
+.nav .nav__top div {
   display: flex;
   gap: 10px;
 }
 
-.nav .top {
+.nav .nav__top {
   justify-content: space-between;
 }
 
-.nav .bottom div {
+.nav .nav__bottom div {
   display: flex;
   gap: 10px;
 }
 
-.nav .bottom .name {
+.nav .nav__bottom .nav__name {
   display: grid;
   grid-template-rows: 5px 15px;
 }
 
-.introduction {
+.nav__introduction {
   font-size: 12px;
 }
 
-.username {
+.nav__username {
   font-size: 20px;
 }
 
-.nav .bottom {
+.nav .nav__bottom {
   justify-content: space-between;
 }
 
@@ -99,7 +101,7 @@ body {
   grid-template-columns: 4fr 1fr;
 }
 
-.cards {
+.content__cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 10px 1fr 1fr 1fr;
@@ -107,23 +109,23 @@ body {
   gap: 50px;
 }
 
-.cards .header {
+.content__cards .content__header {
   grid-column: 1 / 3;
   margin-bottom: -40px;
   font-size: 30px;
 }
 
-.cards p {
+.content__cards p {
   background-color: red;
 }
 
-.news { 
+.content__news { 
   display: grid;
   grid-template-rows: 30px 1fr 30px 1fr;
   padding: 20px;
 }
 
-.news .card {
+.content__news .card {
   background: red;
   margin-bottom: 20px;
 }

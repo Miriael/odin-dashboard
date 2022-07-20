@@ -9,10 +9,10 @@
 </head>
 <body>
   <div class="sidebar">
-    <div class="logo">
+    <div class="sidebar__logo">
       <img src="./img/abacus.svg" alt="Logo" width="50px"> Dashboard
     </div>
-    <ul class="main">
+    <ul class="sidebar__main">
       <li><img src="./img/home.svg" alt="Home" width="25px"><a>Home</a></li>
       <li><img src="./img/card-bulleted.svg" alt="Profile card" width="25px"><a>Profile</a></li>
       <li><img src="./img/chat.svg" alt="Chat" width="25px"><a>Messages</a></li>
@@ -27,32 +27,34 @@
     </ul>
   </div>
   <div class="nav">
-    <div class="top">
-      <p>search</p>
+    <div class="nav__top">
+      <div class="nav__searchbar">
+        <img src="./img/magnify.svg" alt="Search" width="20px"><input name="searchbar" size="50">
+      </div>
       <div>
         <p>notification</p>
         <p>av</p>
         <p>name</p>
       </div> 
     </div>
-    <div class="bottom">
-      <div class="left">
+    <div class="nav__bottom">
+      <div class="nav__left">
         <p>av</p>
-        <div class="name">
-          <p class="introduction">hello there</p>
-          <p class="username">name of user</p>
+        <div class="nav__name">
+          <p class="nav__introduction">hello there</p>
+          <p class="nav__username">name of user</p>
         </div>
       </div>
-      <div class="right">
-        <p>button1</p>
-        <p>button2</p>
-        <p>button3</p>
+      <div class="nav__right">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
       </div>
     </div>
   </div>
   <div class="content">
-    <div class="cards">
-      <p class="header">dummy stuff</p>
+    <div class="content__cards">
+      <p class="content__header">dummy stuff</p>
       <p>one</p>
       <p>two</p>
       <p>three</p>
@@ -60,11 +62,11 @@
       <p>five</p>
       <p>six</p>
     </div>
-    <div class="news">
+    <div class="content__news">
       <p>new stuff</p>
-      <p class="card">announcements</p>
+      <p class="content__announcements card">announcements</p>
       <p>different stuff</p>
-      <p class="card">updates</p>
+      <p class="content__trending card">updates</p>
     </div>
   </div>
 </body>
