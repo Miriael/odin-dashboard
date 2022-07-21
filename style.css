@@ -1,6 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 li {
@@ -24,15 +25,17 @@ body {
   padding-top: 15px;
   color: white;
   font-weight: bolder;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  z-index: 2;
 }
 
 .sidebar__logo {
   font-size: larger;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 30% 70%;
 }
 
-
-.sidebar .sidebar__main {
+.sidebar__main {
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -42,61 +45,93 @@ body {
   -webkit-filter: invert(100%);
 }
 
-.sidebar__logo {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 30% 70%;
-}
-
 .nav {
-  background: gray;
+  background: whitesmoke;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   padding: 10px 5% 10px;
-  box-shadow: 0px 10px black;
+  z-index: 1;
+  box-shadow: 0px 0px 7px grey;
 }
 
-.nav .nav__top,
-.nav .nav__bottom,
-.nav .nav__bottom div {
+.nav__top,
+.nav__bottom,
+.nav__bottom div {
   display: flex;
   align-items: center;
 }
 
-.nav .nav__top div {
+.nav__top div {
   display: flex;
-  gap: 10px;
 }
 
-.nav .nav__top {
+.nav__top {
   justify-content: space-between;
 }
 
-.nav .nav__bottom div {
+.nav__searchbar input {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0px;
+  border-radius: 15px;
+  background-color: skyblue;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.nav__notification-bar {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav__notification-bar img,
+.nav__bottom img {
+  border-radius: 50%;
+}
+
+.nav__notification-bar p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.nav__bottom div {
   display: flex;
   gap: 10px;
 }
 
-.nav .nav__bottom .nav__name {
+.nav .nav__name {
   display: grid;
   grid-template-rows: 5px 15px;
 }
 
 .nav__introduction {
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: bolder;
 }
 
 .nav__username {
   font-size: 20px;
+  font-weight: bolder;
 }
 
-.nav .nav__bottom {
+.nav__bottom {
   justify-content: space-between;
 }
 
+.nav__bottom button {
+  background-color: #0ea5e9;
+  width: 100px;
+  height: 30px;
+  border-radius: 16px;
+  color: white;
+  font-weight: bolder;
+  border: 0px;
+}
+
 .content {
-  background: green;
+  background: lightgrey;
   display: grid;
   grid-template-columns: 4fr 1fr;
 }
@@ -106,13 +141,13 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 10px 1fr 1fr 1fr;
   padding: 20px;
-  gap: 50px;
+  gap: 20px;
 }
 
-.content__cards .content__header {
+.content__header {
   grid-column: 1 / 3;
-  margin-bottom: -40px;
-  font-size: 30px;
+  margin-bottom: -10px;
+  font-size: 20px;
 }
 
 .content__cards p {
